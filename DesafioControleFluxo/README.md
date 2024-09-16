@@ -1,18 +1,28 @@
-## Getting Started
+## Desafio Controle de Fluxo
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+### Descrição
+O projeto Contador é um programa Java que solicita ao usuário dois parâmetros inteiros positivos via terminal. O programa verifica se os parâmetros atendem às condições estabelecidas e, se válidos, conta e imprime os números entre os dois parâmetros fornecidos. Caso contrário, o sistema fornece mensagens de erro apropriadas
 
-## Folder Structure
+### Funcionalidades
+- Solicita dois parâmetros inteiros do usuário.
+- Verifica se os parâmetros são positivos e se o segundo é maior que o primeiro.
+- Imprime números incrementados entre os parâmetros fornecidos, se as condições forem atendidas.
+- Lança uma exceção personalizada se o segundo parâmetro não for maior que o primeiro.
 
-The workspace contains two folders by default, where:
+### Como executar
+1. Compile as classes.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Compile os arquivos Java com o seguinte comando:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+```javac Contador.java ParametrosInvalidosException.java```
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+2. Execute o Programa:
 
-## Dependency Management
+```java Contador```
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+3. Digite os Parâmetros:
+
+O programa solicitará que você insira dois números inteiros positivos. Siga as instruções abaixo:
+
+- Se algum dos parâmetros for diferente de um número inteiro positivo e o primeiro parâmetro for um número maior ou igual ao segundo, o programa exibirá uma mensagem de erro e pedirá novos valores.
+- Se a entrada for válida, o programa exibirá uma lista de números incrementados entre os dois valores fornecidos.
